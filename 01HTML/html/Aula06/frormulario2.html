@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Formulário 2</title>
+</head>
+<body>
+    <h1>Aula 06</h1>
+    <p>Cardápio</p>
+    <form action="">
+        <select name="" id="" title="Escolha um prato">
+            <option value="pizza">Pizza</option>
+            <option value="nutella">Nutella</option>
+            <option value="bauru">Bauru</option>
+            <option value="pastel">Pastel</option>
+            <option value="esfinha">Esfinha</option>
+            <option value="pao">Pão</option>
+            <option value="humburger">Humburger</option>
+        </select>
+
+        <p>Estamos expandindo nossas unidades, sugira sua cidade para que avaliaremos a abertura de uma de nossas loja:</p>
+
+        <datalist id="municipio">
+         <option value="guarulhos">Guarulhos</option>
+         <option value="maua">Mauã</option>
+         <option value="santoAndre">Santo Andre</option>
+         <option value="sorocaba">Sorocaba</option>
+         <option value="suzano"></option>
+         <option value=""></option>
+         <option value=""></option>
+         <option value=""></option>
+         <option value=""></option>
+         <option value=""></option>
+        </datalist>
+
+        <label for="indicaMunicipio">Indique seu Municipio</label>
+        <input type="text" autocomplete="on" list="municipio"
+         name="indicaMunicipio" id="indicaMunicipio">
+    </form>
+</body>
+</html>

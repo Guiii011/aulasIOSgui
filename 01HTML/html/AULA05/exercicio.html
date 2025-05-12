@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tabela</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<style>
+    body {
+        font-family: "Open sans", sans-serif;
+
+    }
+
+    .mes {
+        background-color: dimgrey;
+        color: white;
+        text-align: center;
+
+    }
+
+    .gasto {
+        background-color: green;
+        color: white;
+        text-align: center;
+    }
+
+    .lucro {
+        background-color: darkslategrey;
+        color: white;
+        text-align: center;
+    }
+
+    #total {
+        background-color: cadetblue;
+        color: white;
+        text-align: center;
+    }
+#rowspan {
+    text-align: center;
+    background-color: dimgrey;
+    color: white;
+}
+
+    table {
+        border-radius: 10px;
+    }
+</style>
+
+<body>
+    <table border="5PX">
+        <thead>
+            <tr>
+                <th colspan="3">Controle de gastos trimestral</th>
+            </tr>
+            <th class="mes">Mês</th>
+            <th class="gasto">Gasto</th>
+            <th class="lucro">Lucro</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <td class="mes">Maio</td>
+                <td class="gasto">R$ 2.650,00</td>
+                <td class="lucro">R$ 1.900,00</td>
+                <td rowspan="4" id="rowspan">vitor</td>
+            </tr>
+            <tr>
+                <td class="mes">Junho</td>
+                <td class="gasto">R$ 1.650,00</td>
+                <td class="lucro">R$ 1.900,00</td>
+            </tr>
+            <tr>
+                <td class="mes">Junho</td>
+                <td class="gasto">R$ 650,00</td>
+                <td class="lucro">R$ 1.900,00</td>
+            </tr>
+        </tbody>
+        <tfoot>
+            <tr id="total">
+                <td>TOTAL</td>
+                <td>R$ 4.900,00</td>
+                <td>R$ 5.700,00</td>
+                <td>R$ 800,00</td>
+            </tr>
+
+        </tfoot>
+
+    </table>
+</body>
+
+</html>
