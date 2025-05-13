@@ -12,35 +12,37 @@
 
     <h2>Informações para TOTVS:</h2>
 
-    <form action="">
+    <form action="mailto:" method="get">
 
         <label for="nomeCompleto">NOME COMPLETO</label>
-        <input type="text" id="nomeCompleto" name="nomeCompleto" placeholder="Digite seu nome completo">
+        <input type="text" minlength="3" maxlength="50"
+         id="nomeCompleto" name="nomeCompleto" placeholder="Digite seu nome completo" required>
 
         <br>
 
         <label for="cpf">CPF</label>
-        <input type="text" id="cpf" name="cpf" placeholder="Digite seu CPF">
+        <input type="text" minlength="11" maxlength="11"
+         id="cpf" name="cpf" placeholder="Digite seu CPF" required>
 
         <br>
 
         <label for="rg">RG</label>
-        <input type="text" id="rg" name="rg" placeholder="Digite seu RG">
+        <input type="text" id="rg" name="rg" placeholder="Digite seu RG" required>
 
         <br>
 
         <p>De que estado você virá?</p>
-        <input type="radio" name="estado" id="sp">
+        <input type="radio" name="estado" id="sp" required>
         <label for="sp">São Paulo</label>
 
         <br>
 
-        <input type="radio" name="estado" id="mg">
+        <input type="radio" name="estado" id="mg" required>
         <label for="mg">Minas Gerais</label>
 
         <br>
 
-        <input type="radio" name="estado" id="rj">
+        <input type="radio" name="estado" id="rj" required>
         <label for="rj">Rio de Janeiro</label>
 
         <br>
