@@ -1,0 +1,8 @@
+* {
+    background-color: rgb(203, 220, 220);
+}
+
+ul :link {
+    display: flex;
+    letter-spacing: 29px;
+}
